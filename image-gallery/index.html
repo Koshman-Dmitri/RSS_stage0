@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image gallery</title>
+  <link rel="icon" type="image/png" href="favicon16.png" />
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/main.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header-wrapper">
+    <div class="container">
+      <div class="header">
+        <!-- logo -->
+        <div class="logo-wrapper">
+          <img class="header__logo" src="assets/logo.png" alt="logo">
+          <h1 class="header__title">Unsplash API</h1>
+        </div>
+        <!-- next page -->
+        <div class="page-wrapper">
+          <div class="page-stats">
+            <span id="total-count"></span>
+            <span id="page-count"></span>
+          </div>
+          <input
+            class="filter__next"
+            id="next"
+            type="button"
+            name="search"
+            value="Next"
+          >
+        </div>
+        <!-- search -->
+        <div class="filter-wrapper">
+          <input
+            class="filter__input"
+            id="search"
+            type="text"
+            name="search"
+            placeholder="Search..."
+            autocomplete="off"
+            autofocus
+          >
+          <svg class="filter__icon-search"><use href="assets/sprite.svg#search-icon"></use></svg>
+          <svg class="filter__icon-delete"><use href="assets/sprite.svg#delete-icon"></use></svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main class="main-wrapper">
+    <div class="container">
+      <div class="main"></div>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <div class="container">
+      <div class="footer">
+        <a class="footer-git" href="https://github.com/Koshman-Dmitri" title="GitHub">GitHub</a>
+        <a class="rs-school" href="https://rs.school/js/" title="RS.School"></a>
+        <time datetime="2023">Created in 2023</time>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
