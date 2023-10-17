@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/main.js" defer></script>
+</head>
+
+<body>
+    <div class="background"></div>
+    <!-- NAV -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a class="nav-item" href="#summary">About</a></li>
+            <li><a class="nav-item" href="#code">Code</a></li>
+            <li><a class="nav-item" href="#education">Education</a></li>
+            <li><a class="nav-item" href="#contacts">Contacts</a></li>
+            <li><a class="nav-item" href="#skills">Skills</a></li>
+            <li><a class="nav-item" href="#experience">Experience</a></li>
+            <li><a class="nav-item" href="#lang">Language</a></li>
+        </ul>
+        <div class="mobileNav">
+            <div class="mobileNav-btn"></div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header>
+        <div class="profile">
+            <img class="logo" src="assets/avatar.png" alt="My photo">
+        </div>
+        <h1>Dmitri Koshman</h1>
+    </header>
+    <!-- CONTENT -->
+    <div class="container">
+        <main>
+            <!-- SUMMARY -->
+            <section class="section" id="summary">
+                <h2 class="section-title--right">Summary</h2>
+                <p>
+                    My passion for programming started at school. I have been trying to design website layouts. However,
+                    it remained only a hobby at that time. I decided to build my career in the industrial sector. But
+                    the craving for coding remained throughout life.
+                </p>
+                <p>
+                    For 4 years I have been working in the energy sector as an automatization process control engineer.
+                    I develop programs for industrial controllers and user interface (HMI, SCADA). I realized that all
+                    my life I liked coding, so now I want to change the field of activity. I dedicate my free time to
+                    self-studying for the front-end developer profession in every possible way and I hope to become one
+                    soon. I have two higher technical educations, a creative mindset, developed self-discipline and
+                    self-learning.
+                </p>
+                <p>
+                    From this course I look forward to consolidating my knowledge and acquiring new skills.
+                </p>
+            </section>
+            <!-- CODE -->
+            <section class="section" id="code">
+                <h2 class="section-title--right">Code example</h2>
+                <p>
+                    <i>KATA from CODEWARS: You are given an array (which will have a length of at least 3, but could be
+                        very large) containing integers. The array is either entirely comprised of odd integers or
+                        entirely comprised of even integers except for a single integer N. Write a method that takes the
+                        array as an argument and returns this "outlier" N.</i>
+                </p>
+                <br>
+                <pre class="code">
+                    <code>
+    <span class="code-blue">function</span> <span class="code-lightYellow">findOutlier</span><span class="code-orange">(</span>integers<span class="code-orange">) {</span>
+        <span class="code-blue">let</span> evens = integers.<span class="code-lightYellow">filter</span><span class="code-purple">(</span>item <span class="code-blue">=></span> item % <span class="code-green">2</span> === <span class="code-green">0</span><span class="code-purple">)</span>;
+        <span class="code-blue">let</span> odds = integers.<span class="code-lightYellow">filter</span><span class="code-purple">(</span>item <span class="code-blue">=></span> item % <span class="code-green">2</span> !== <span class="code-green">0</span><span class="code-purple">)</span>;
+        <span class="code-purple">return</span> evens.length > odds.length ? odds<span class="code-purple">[</span>0<span class="code-purple">]</span> : evens<span class="code-purple">[</span>0<span class="code-purple">]</span>;
+    <span class="code-orange">}</span></code>
+                </pre>
+            </section>
+            <!-- EDUCATION -->
+            <section class="section" id="education">
+                <h2 class="section-title--right">Education</h2>
+                <ul class="education-list">
+                    <li>Belarusian-Russian University
+                        <ul class="education-list__inner">
+                            <li>Automatic Electric Drivers</li>
+                        </ul>
+                    </li>
+                    <li>Belarusian National Technical University
+                        <ul class="education-list__inner">
+                            <li>Technical operation of thermal power plants and heat supply systems</li>
+                        </ul>
+                    </li>
+                    <li>Internet
+                        <ul class="education-list__inner">
+                            <li><a class="refs" href="https://developer.mozilla.org/en-US/docs/Web"
+                                    title="MDN">HTML/CSS</a></li>
+                            <li><a class="refs" href="https://learn.javascript.ru/"
+                                    title="learn.javascript.ru">JavaScript</a></li>
+                            <li><a class="refs" href="https://react.dev/" title="react.dev">React</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <aside>
+            <!-- CONTACTS -->
+            <section class="section" id="contacts">
+                <h2 class="section-title--left">Contact Me</h2>
+                <ul class="aside-list aside-list--contacts">
+                    <li>
+                        <address>Location: Belarus, Mogilev</address>
+                    </li>
+                    <li>Phone: +375-44-794-94-17</li>
+                    <li>E-mail: <a class="refs" href="mailto:i9195be@gmail.com" title="gmail">i9195be@gmail.com</a></li>
+                    <li>GitHub: <a class="refs" href="https://github.com/Koshman-Dmitri"
+                            title="GitHub">Koshman-Dmitri</a></li>
+                    <li>Telegram: <a class="refs" href="https://t.me/dm_kosh" title="telegram">@dm_kosh</a></li>
+                </ul>
+            </section>
+            <!-- SKILLS -->
+            <section class="section" id="skills">
+                <h2 class="section-title--left">Skills</h2>
+                <ul class="aside-list aside-list--skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Git, GitHub</li>
+                    <li>Soft skills</li>
+                </ul>
+            </section>
+            <!-- EXPERIENCE -->
+            <section class="section" id="experience">
+                <h2 class="section-title--left">Experience</h2>
+                <p>
+                    No experience with commercial project development.<br>
+                    Here is an <a class="refs" href="https://koshman-dmitri.github.io/AXIT/" title="AXIT">example</a> of
+                    my early work.
+                </p>
+            </section>
+            <!-- LANGUAGE -->
+            <section class="section" id="lang">
+                <h2 class="section-title--left">Languages</h2>
+                <ul>
+                    <li>Russian - Native</li>
+                    <li>English - Intermediate (B1)</li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <a class="footer-git" href="https://github.com/Koshman-Dmitri" title="GitHub">GitHub</a>
+        <a class="rs-school" href="https://rs.school/js/" title="RS.School"></a>
+        <time datetime="2023">Created in 2023</time>
+    </footer>
+</body>
+
+</html>
