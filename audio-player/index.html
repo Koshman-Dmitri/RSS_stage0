@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio-player</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/main.js" defer></script>
+</head>
+
+<body>
+  <img class="background" src="assets/images/Aviva - Demons.jpg" alt="background track picture">
+  <audio src="assets/music/Aviva - Demons.mp3" preload="metadata"></audio>
+  <div class="wrapper">
+    <div class="player">
+      <img class="track-image" src="assets/images/Aviva - Demons.jpg" alt="track image">
+      <div class="track-control">
+        <div class="boombox">
+          <svg>
+            <use href="assets/icons/sprite.svg#icon-mute"></use>
+          </svg>
+        </div>
+        <div class="control__panel">
+          <div class="control__buttons">
+            <button class="button button_backward">
+              <svg>
+                <use href="assets/icons/sprite.svg#icon-prev"></use>
+              </svg>
+            </button>
+            <button class="button button_play">
+              <svg>
+                <use href="assets/icons/sprite.svg#icon-play"></use>
+              </svg>
+            </button>
+            <button class="button button_forward">
+              <svg>
+                <use href="assets/icons/sprite.svg#icon-next"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="duration">
+            <span class="current-time">0:00</span>
+            <input class="custom-range" type="range" name="range" min="0" max="100" value="0">
+            <span class="track-time"></span>
+          </div>
+          <p class="track-title"></p>
+          <p class="track-author"></p>
+        </div>
+        <div class="boombox">
+          <svg>
+            <use href="assets/icons/sprite.svg#icon-mute"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a class="footer-git" href="https://github.com/Koshman-Dmitri" title="GitHub">GitHub</a>
+      <a class="rs-school" href="https://rs.school/js-stage0/" title="RS.School"></a>
+      <time datetime="2023">Created in 2023</time>
+    </footer>
+  </div>
+</body>
+
+</html>
